@@ -9,7 +9,7 @@
     {
       "name": "transitway",
       "source": "./plugins/transitway",
-      "description": "사용자 정의 경유지 경로(way)별 대중교통 소요시간을 계산해 매일 아침 카카오톡으로 전송. MCP 서버 + 스킬 + 훅 + 에이전트 + 커맨드 포함.",
+      "description": "사용자 정의 경유지 경로(way)별 대중교통 소요시간을 계산해 매일 아침 카카오톡으로 전송. MCP 서버 + 스킬 + 훅 + 커맨드 포함.",
       "version": "2.0.0",
       "author": { "name": "sealworldking" },
       "category": "productivity",

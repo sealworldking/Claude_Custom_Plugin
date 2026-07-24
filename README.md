@@ -4,7 +4,7 @@
 매일 아침 **카카오톡 '나에게 보내기'**로 전송하는 Claude Code 플러그인.
 
 ODsay + 카카오 로컬 API + PlayMCP(KakaoTalk) 조합.  
-커스텀 MCP 서버 · 스킬 · 훅 · 에이전트 · 슬래시 커맨드 포함.
+커스텀 MCP 서버 · 스킬 · 훅 · 슬래시 커맨드 포함.
 
 ---
 
@@ -141,7 +141,6 @@ setx TRANSITWAY_PROJECT_DIR "C:\내_프로젝트_폴더"
 |------|------|--------|
 | `/transitway` | 슬래시 커맨드 | `/transitway` 입력 |
 | `transitway:transitway` | 스킬 | "경로 카톡으로", "출근 브리핑" 등 자연어 |
-| `route-advisor` | 에이전트 | 경로 비교·추천 요청 시 자동 호출 |
 | SessionStart 훅 | 훅 | 세션 시작 시 등록 경로 수 자동 표시 |
 | transit MCP | MCP 서버 | `set_way` / `get_ways` / `clear_ways` / `brief_ways` |
 
@@ -169,7 +168,6 @@ Claude_Custom_Plugin/
 │     ├─ .mcp.json
 │     ├─ mcp-server/index.js         # 커스텀 MCP 서버 (무의존성)
 │     ├─ skills/transitway/SKILL.md
-│     ├─ agents/route-advisor.md
 │     ├─ commands/transitway.md
 │     ├─ hooks/
 │     ├─ scripts/
