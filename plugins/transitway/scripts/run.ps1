@@ -36,7 +36,10 @@ if (-not $claude) { "[ERROR] claude.exe not found" | Out-File -FilePath $log -Ap
 # KakaoTalk PlayMCP 커넥터가 등록된 Claude Code 프로젝트 폴더. TRANSITWAY_PROJECT_DIR 환경변수로 재정의 가능.
 $projectDir = if ($env:TRANSITWAY_PROJECT_DIR) { $env:TRANSITWAY_PROJECT_DIR } else { $env:USERPROFILE }
 Set-Location $projectDir
-$prompt = "다음 내용을 수정하지 말고 그대로 KakaotalkChat-MemoChat 도구로 나에게 카카오톡 전송해줘:`n`n$brief"
+# $brief는 native command 출력이라 줄 단위 배열이다. 그대로 보간하면 공백으로 합쳐져
+# 브리핑 줄바꿈이 사라지므로 명시적으로 개행으로 join 한다.
+$briefText = $brief -join "`n"
+$prompt = "다음 내용을 수정하지 말고 그대로 KakaotalkChat-MemoChat 도구로 나에게 카카오톡 전송해줘:`n`n$briefText"
 & $claude -p $prompt --dangerously-skip-permissions 2>&1 | Tee-Object -FilePath $log -Append
 
 "[$(Get-Date -Format 'yyyyMMdd-HHmmss')] END exit=$LASTEXITCODE" | Out-File -FilePath $log -Append -Encoding utf8
