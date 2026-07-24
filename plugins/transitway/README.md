@@ -11,7 +11,6 @@ transitway/
 ├─ .mcp.json                          # 커스텀 MCP 서버 등록 (transit)
 ├─ mcp-server/index.js                # 카카오 지오코딩 + ODsay 구간시간 계산 (무의존성)
 ├─ skills/transitway/SKILL.md         # 전체 절차 스킬
-├─ agents/route-advisor.md            # 경로 추천 서브에이전트
 ├─ commands/transitway.md             # /transitway 슬래시 커맨드
 ├─ hooks/hooks.json                   # SessionStart 훅 (등록 경로 수 표시)
 ├─ hooks/session-preview.js
@@ -152,7 +151,6 @@ setx TRANSITWAY_PROJECT_DIR "C:\내_프로젝트_폴더"
 |------|------|------|
 | `/transitway` | 커맨드 | 경로 브리핑 계산 후 카카오톡 전송 |
 | `transitway:transitway` | 스킬 | 동일 동작. 자연어로도 트리거됨 |
-| `route-advisor` | 에이전트 | 여러 경로 중 최적 경로 선택 및 이유 설명 |
 | SessionStart 훅 | 훅 | 세션 시작 시 등록된 경로 수를 컨텍스트로 표시 |
 | transit MCP | MCP 서버 | `set_way` / `get_ways` / `clear_ways` / `brief_ways` 도구 제공 |
 
