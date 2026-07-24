@@ -1,0 +1,8 @@
+{
+  "name": "transitway",
+  "version": "2.0.0",
+  "description": "사용자가 직접 정의한 여러 경로(way=경유지 순서)별 대중교통 소요시간을 ODsay+카카오 API로 계산해, 추천(최단) 경로와 함께 매일 아침 카카오톡으로 전송한다. 커스텀 MCP 서버 + 스킬 + 훅 + 에이전트 + 커맨드 구성.",
+  "author": { "name": "sealworldking" },
+  "license": "MIT",
+  "keywords": ["transit", "commute", "bus", "subway", "kakaotalk", "odsay", "대중교통", "출근", "경로", "카카오톡"]
+}

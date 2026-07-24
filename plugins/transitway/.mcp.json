@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "transit": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp-server/index.js"],
+      "env": {
+        "ODSAY_API_KEY": "${ODSAY_API_KEY}",
+        "ODSAY_REFERER": "${ODSAY_REFERER}",
+        "KAKAO_REST_API_KEY": "${KAKAO_REST_API_KEY}"
+      }
+    }
+  }
+}

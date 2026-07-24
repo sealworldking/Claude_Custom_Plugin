@@ -1,0 +1,6 @@
+# secrets & runtime
+**/scripts/odsay.key
+**/scripts/logs/
+**/*.log
+.transitway/
+node_modules/
