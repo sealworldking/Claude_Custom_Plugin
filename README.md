@@ -118,8 +118,10 @@ way1 43분 / way2 51분
 
 ```powershell
 # 관리자 PowerShell
-& "$env:USERPROFILE\.claude\plugins\cache\transitway@transitway\scripts\install-schedule.ps1"
+& "$env:USERPROFILE\.claude\plugins\cache\transitway\transitway\2.0.0\scripts\install-schedule.ps1"
 ```
+
+경로는 `cache\<마켓플레이스>\<플러그인>\<버전>\` 구조다. `2.0.0` 자리는 설치된 버전으로 맞춘다.
 
 카카오톡 커넥터가 연결된 Claude Code 프로젝트 폴더를 지정:
 ```powershell

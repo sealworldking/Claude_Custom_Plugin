@@ -129,8 +129,10 @@ way1 43분 / way2 51분
 
 **설치 (관리자 PowerShell):**
 ```powershell
-& "$env:USERPROFILE\.claude\plugins\cache\transitway@transitway\scripts\install-schedule.ps1"
+& "$env:USERPROFILE\.claude\plugins\cache\transitway\transitway\2.0.0\scripts\install-schedule.ps1"
 ```
+
+경로는 `cache\<마켓플레이스>\<플러그인>\<버전>\` 구조다. `2.0.0` 자리는 설치된 버전으로 맞춘다.
 
 또는 카카오톡이 연동된 Claude Code 프로젝트 폴더를 환경변수로 지정:
 ```powershell
